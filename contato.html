@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato | 2P Gestão &amp; Tecnologia</title>
+  <meta name="description" content="Solicite um orçamento para sites com IA, sistemas internos e consultoria em gestão. Fale com a 2P Gestão & Tecnologia.">
+  <link rel="canonical" href="https://2pgestaoetecnologia.com.br/contato.html">
+  <meta name="theme-color" content="#0d2750">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contato">
+  <header data-header></header>
+
+  <main>
+    <section class="page-hero">
+      <span class="eyebrow">Contato</span>
+      <h1>Vamos conversar sobre <br>o seu projeto?</h1>
+      <p>Preencha o formulário e receba uma proposta personalizada. Respondemos rapidinho.</p>
+      <div class="breadcrumb"><a href="index.html">Início</a> / Contato</div>
+    </section>
+
+    <section class="section" id="formulario">
+      <div class="container contact-grid">
+        <aside class="contact-info reveal">
+          <h3>Fale com a 2P</h3>
+          <p>Prefere um contato direto? Use um dos canais abaixo.</p>
+          <div class="contact-item"><span class="ic" data-whats-icon></span><div><small>WhatsApp / Telefone</small><a data-wa="Olá! Vim pelo site da 2P."><span data-site="telefone"></span></a></div></div>
+          <div class="contact-item"><span class="ic" data-icon="mail"></span><div><small>E-mail</small><a data-mailto><span data-site="email"></span></a></div></div>
+          <div class="contact-item"><span class="ic" data-icon="clock"></span><div><small>Horário de atendimento</small><b data-site="horario"></b></div></div>
+          <div class="contact-item"><span class="ic" data-icon="doc"></span><div><small>CNPJ</small><b data-site="cnpj"></b></div></div>
+          <a class="btn btn--whats" style="width:100%;margin-top:22px" data-wa="Olá! Vim pelo site da 2P e quero um orçamento."><span data-whats-icon style="display:inline-flex;width:18px"></span> Chamar no WhatsApp</a>
+        </aside>
+
+        <div class="form-card reveal" data-delay="1">
+          <h2 style="font-size:1.7rem">Solicite seu orçamento</h2>
+          <p style="color:var(--muted)">Campos com * são obrigatórios.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="nome">Nome *</label>
+                <input id="nome" name="nome" type="text" autocomplete="name" required>
+                <span class="err">Informe seu nome.</span>
+              </div>
+              <div class="field">
+                <label for="empresa">Empresa</label>
+                <input id="empresa" name="empresa" type="text" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label for="email">E-mail *</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+                <span class="err">Informe um e-mail válido.</span>
+              </div>
+              <div class="field">
+                <label for="telefone">WhatsApp / Telefone *</label>
+                <input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(11) 90000-0000" required>
+                <span class="err">Informe um telefone com DDD.</span>
+              </div>
+              <div class="field field--full">
+                <label for="servico">Qual serviço você procura? *</label>
+                <select id="servico" name="servico" required>
+                  <option value="">Selecione…</option>
+                  <option value="site">Site personalizado com IA</option>
+                  <option value="gestao">Consultoria em gestão de negócios</option>
+                  <option value="checklist">Checklist de inspeções S.I.F / Anvisa</option>
+                  <option value="kds">KDS — sistema para cozinha</option>
+                  <option value="estoque">Controle de estoque</option>
+                  <option value="shelftag">Etiquetas ShelfTag</option>
+                  <option value="outro">Outro sistema / ainda não sei</option>
+                </select>
+                <span class="err">Escolha uma opção.</span>
+              </div>
+              <div class="field field--full">
+                <label>Segmento da empresa</label>
+                <div class="chips">
+                  <label><input type="checkbox" name="interesse" value="Restaurante / Food service"><span>Restaurante / Food service</span></label>
+                  <label><input type="checkbox" name="interesse" value="Indústria de alimentos"><span>Indústria de alimentos</span></label>
+                  <label><input type="checkbox" name="interesse" value="Varejo / Supermercado"><span>Varejo / Supermercado</span></label>
+                  <label><input type="checkbox" name="interesse" value="Serviços"><span>Serviços</span></label>
+                  <label><input type="checkbox" name="interesse" value="Outro"><span>Outro</span></label>
+                </div>
+              </div>
+              <div class="field field--full">
+                <label for="mensagem">Conte um pouco sobre o seu projeto *</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Ex.: preciso de um site para minha clínica com agendamento pelo WhatsApp…"></textarea>
+                <span class="err">Escreva uma breve mensagem.</span>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn--primary" type="submit">Enviar pelo WhatsApp <i data-icon="arrow"></i></button>
+              <button class="btn btn--outline" type="button" data-send-email>Enviar por e-mail</button>
+              <a class="btn btn--outline" data-form-externo hidden target="_blank" rel="noopener">Abrir formulário completo</a>
+            </div>
+            <p class="form-note">Seus dados são usados apenas para retornarmos o contato, conforme a LGPD.</p>
+          </form>
+
+          <div class="form-success" role="status">
+            <div class="icon-box icon-box--green" data-icon="check"></div>
+            <h3>Obrigado pelo contato!</h3>
+            <p style="color:var(--muted)">Sua mensagem foi preparada. Se a janela do WhatsApp ou do e-mail não abriu, fale com a gente pelos canais ao lado.</p>
+            <button class="btn btn--outline" type="button" data-form-reset>Enviar outra mensagem</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2>Perguntas <span class="text-grad">frequentes</span></h2>
+        </div>
+        <div class="faq reveal">
+          <details open>
+            <summary>Quanto tempo leva para o meu site ficar pronto?</summary>
+            <p>Graças ao uso de Inteligência Artificial no processo, a maioria dos sites fica pronta em cerca de 7 dias úteis após o envio das informações. Projetos maiores têm o prazo definido na proposta.</p>
+          </details>
+          <details>
+            <summary>O site criado com IA é um modelo genérico?</summary>
+            <p>Não. A IA acelera a criação, mas todo o layout, textos, cores e funcionalidades são personalizados pela nossa equipe conforme a identidade e a necessidade do seu negócio.</p>
+          </details>
+          <details>
+            <summary>O checklist de inspeções atende às exigências do S.I.F e da Anvisa?</summary>
+            <p>Os checklists são configurados a partir dos programas de autocontrole e das rotinas exigidas no seu segmento (BPF, PPHO, APPCC, entre outros), garantindo registros organizados, rastreáveis e prontos para auditoria.</p>
+          </details>
+          <details>
+            <summary>Os sistemas funcionam no celular e no tablet?</summary>
+            <p>Sim. Nossos sistemas são web e responsivos, funcionando no computador, tablet e celular — ideal para uso no chão de fábrica, na cozinha ou na loja.</p>
+          </details>
+          <details>
+            <summary>Vocês oferecem suporte depois da entrega?</summary>
+            <p>Sim. Fazemos a implantação, o treinamento da equipe e oferecemos planos de suporte e manutenção contínuos.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

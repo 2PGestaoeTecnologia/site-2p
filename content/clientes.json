@@ -1,0 +1,14 @@
+{
+  "titulo": "Empresas que já confiam na 2P",
+  "clientes": [
+    { "nome": "Pissani", "detalhe": "Massas Gourmet", "logo": "assets/img/clientes/pissani.png" },
+    { "nome": "La Firenze", "detalhe": "Massas Artesanais", "logo": "assets/img/clientes/la-firenze.png" },
+    { "nome": "Intermezzo", "detalhe": "Carnes", "logo": "assets/img/clientes/intermezzo.png" },
+    { "nome": "GLA Ice", "detalhe": "Gelo & Distribuição", "logo": "assets/img/clientes/gla-ice.png" },
+    { "nome": "Lamari", "detalhe": "Confecção", "logo": "assets/img/clientes/lamari.png" },
+    { "nome": "Blue Basic", "detalhe": "Loja de roupas", "logo": "assets/img/clientes/blue-basic.png" },
+    { "nome": "Sr. Batata Fries", "detalhe": "Batata frita para eventos", "logo": "assets/img/clientes/sr-batata-fries.png" },
+    { "nome": "Linguiçaria do Chef (LDC)", "detalhe": "Frigorífico", "logo": "assets/img/clientes/ldc.png" },
+    { "nome": "VMP Ateliê", "detalhe": "Ateliê de artesanatos", "logo": "assets/img/clientes/vmp-atelie.png" }
+  ]
+}

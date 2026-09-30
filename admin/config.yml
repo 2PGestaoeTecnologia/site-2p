@@ -1,0 +1,105 @@
+# Painel de edição do site 2P Gestão & Tecnologia (Decap CMS)
+# O painel grava as alterações nos arquivos da pasta content/ do repositório no GitHub,
+# e o Netlify publica o site atualizado automaticamente.
+
+backend:
+  name: github
+  repo: 2PGestaoeTecnologia/site-2p   # usuário/repositório do GitHub (se mudar o usuário, ajuste aqui)
+  branch: main
+  commit_messages:
+    update: "Painel: atualiza {{slug}}"
+    uploadMedia: "Painel: envia imagem {{path}}"
+
+locale: pt
+site_url: https://2pgestaoetecnologia.com.br
+display_url: https://2pgestaoetecnologia.com.br
+logo_url: /assets/img/logo-icone.png
+
+media_folder: assets/img/uploads
+public_folder: /assets/img/uploads
+
+collections:
+  - name: conteudo
+    label: Conteúdo do site
+    editor:
+      preview: false
+    files:
+      - name: empresa
+        label: "Dados da empresa"
+        file: content/empresa.json
+        fields:
+          - { name: nome, label: "Nome da empresa", widget: string }
+          - { name: razao, label: "Razão social (rodapé)", widget: string }
+          - { name: cnpj, label: "CNPJ", widget: string }
+          - { name: telefone, label: "Telefone (como aparece no site)", widget: string }
+          - { name: whatsapp, label: "WhatsApp (só números, com 55 + DDD)", widget: string, hint: "Ex.: 5511968426457" }
+          - { name: email, label: "E-mail", widget: string }
+          - { name: cidade, label: "Cidade", widget: string }
+          - { name: horario, label: "Horário de atendimento", widget: string }
+          - { name: instagram, label: "Link do Instagram", widget: string, required: false }
+          - { name: linkedin, label: "Link do LinkedIn", widget: string, required: false }
+          - { name: formularioExterno, label: "Link de formulário externo (opcional)", widget: string, required: false, hint: "Ex.: Google Forms. Deixe vazio para usar só o formulário do site." }
+
+      - name: clientes
+        label: "Clientes (logos)"
+        file: content/clientes.json
+        fields:
+          - { name: titulo, label: "Título da seção", widget: string }
+          - name: clientes
+            label: "Clientes"
+            label_singular: "cliente"
+            widget: list
+            summary: "{{fields.nome}}"
+            hint: "Arraste para mudar a ordem. Prefira logos em PNG sem fundo."
+            fields:
+              - { name: nome, label: "Nome", widget: string }
+              - { name: detalhe, label: "Ramo (aparece ao passar o mouse)", widget: string, required: false }
+              - { name: logo, label: "Logo", widget: image, required: false, choose_url: false }
+
+      - name: depoimentos
+        label: "Depoimentos"
+        file: content/depoimentos.json
+        fields:
+          - { name: titulo, label: "Título da seção", widget: string, hint: "Use *asteriscos* para destacar palavras com a cor da marca." }
+          - name: depoimentos
+            label: "Depoimentos"
+            label_singular: "depoimento"
+            widget: list
+            summary: "{{fields.nome}} — {{fields.cargo}}"
+            fields:
+              - { name: texto, label: "Depoimento", widget: text }
+              - { name: nome, label: "Nome", widget: string }
+              - { name: cargo, label: "Cargo · Empresa", widget: string, required: false }
+              - { name: estrelas, label: "Estrelas", widget: number, value_type: int, min: 1, max: 5, default: 5 }
+
+      - name: inicio
+        label: "Textos — Página inicial"
+        file: content/inicio.json
+        fields:
+          - { name: hero_selo, label: "Topo — frase pequena acima do título", widget: string }
+          - { name: hero_titulo, label: "Topo — título principal", widget: string, hint: "Use *asteriscos* para destacar palavras com a cor da marca." }
+          - { name: hero_texto, label: "Topo — texto", widget: text }
+          - { name: servicos_titulo, label: "Serviços — título", widget: string }
+          - { name: servicos_texto, label: "Serviços — texto", widget: text }
+          - { name: ia_titulo, label: "Sites com IA — título", widget: string }
+          - { name: ia_texto, label: "Sites com IA — texto", widget: text }
+          - { name: checklist_titulo, label: "Checklist S.I.F/Anvisa — título", widget: string }
+          - { name: checklist_texto1, label: "Checklist — 1º parágrafo", widget: text }
+          - { name: checklist_texto2, label: "Checklist — 2º parágrafo", widget: text, hint: "Use **dois asteriscos** para negrito." }
+          - { name: sistemas_titulo, label: "Sistemas — título", widget: string }
+          - { name: sistemas_texto, label: "Sistemas — texto", widget: text }
+          - { name: cta_titulo, label: "Chamada final — título", widget: string }
+          - { name: cta_texto, label: "Chamada final — texto", widget: text }
+
+      - name: sobre
+        label: "Textos — Sobre nós"
+        file: content/sobre.json
+        fields:
+          - { name: hero_titulo, label: "Topo — título", widget: text, hint: "Cada linha nova vira uma quebra de linha no site." }
+          - { name: hero_texto, label: "Topo — texto", widget: text }
+          - { name: historia_titulo, label: "Nossa história — título", widget: string, hint: "Use *asteriscos* para destacar." }
+          - { name: historia, label: "Nossa história — texto", widget: text, hint: "Deixe uma linha em branco entre os parágrafos. **Dois asteriscos** = negrito." }
+          - { name: historia_foto, label: "Nossa história — foto (opcional)", widget: image, required: false, choose_url: false, hint: "Se vazio, aparece o logotipo da 2P." }
+          - { name: missao, label: "Missão", widget: text }
+          - { name: visao, label: "Visão", widget: text }
+          - { name: proposito, label: "Propósito", widget: text }
