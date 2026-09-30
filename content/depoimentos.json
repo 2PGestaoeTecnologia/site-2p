@@ -1,10 +1,35 @@
 {
   "titulo": "Quem já trabalhou com a 2P *recomenda*",
   "depoimentos": [
-    { "texto": "Nosso site ficou pronto em poucos dias e com a nossa cara. Desde o lançamento, os pedidos pelo WhatsApp praticamente dobraram. Atendimento impecável do começo ao fim.", "nome": "Mariana C.", "cargo": "Proprietária · Confeitaria artesanal", "estrelas": 5 },
-    { "texto": "Trocamos as pranchetas pelo checklist digital da 2P. Hoje acompanho as inspeções em tempo real e chegamos à auditoria com todos os registros organizados. Fez muita diferença para a qualidade.", "nome": "Rafael A.", "cargo": "Coordenador de Qualidade · Indústria de alimentos", "estrelas": 5 },
-    { "texto": "O KDS acabou com a confusão de comandas na cozinha. Os pedidos saem mais rápido, com menos erro, e eu consigo ver os tempos de preparo de cada prato.", "nome": "Juliana L.", "cargo": "Sócia · Restaurante", "estrelas": 5 },
-    { "texto": "Tínhamos estoque em três planilhas diferentes. Com o sistema da 2P, sabemos exatamente o que temos, o que vence e o que precisa comprar. Reduzimos perdas logo no primeiro mês.", "nome": "Paulo S.", "cargo": "Gerente · Distribuidora", "estrelas": 5 },
-    { "texto": "As etiquetas ShelfTag padronizaram nossas gôndolas e agilizaram muito a troca de preços. Equipe atenciosa, que entende de operação de verdade.", "nome": "Fernanda T.", "cargo": "Supervisora · Supermercado", "estrelas": 5 }
+    {
+      "texto": "Nosso site ficou pronto em poucos dias e com a nossa cara. Desde o lançamento, os pedidos pelo WhatsApp praticamente dobraram. Atendimento impecável do começo ao fim.",
+      "nome": "Carla P.",
+      "cargo": "Proprietária · Confecção LaMari",
+      "estrelas": 5
+    },
+    {
+      "texto": "Trocamos as pranchetas pelo checklist digital da 2P. Hoje acompanho as inspeções em tempo real e chegamos à auditoria com todos os registros organizados. Fez muita diferença para a qualidade.",
+      "nome": "Ana Claudia ",
+      "cargo": "Coordenador de Qualidade · Indústria de alimentos",
+      "estrelas": 5
+    },
+    {
+      "texto": "O KDS acabou com a confusão de comandas na cozinha. Os pedidos saem mais rápido, com menos erro, e eu consigo ver os tempos de preparo de cada prato.",
+      "nome": "Rafael Oliveira",
+      "cargo": "Gerente - Pissani Massas Gourmet",
+      "estrelas": 5
+    },
+    {
+      "texto": "Tínhamos estoque em três planilhas diferentes. Com o sistema da 2P, sabemos exatamente o que temos, o que vence e o que precisa comprar. Reduzimos perdas logo no primeiro mês.",
+      "nome": "Allan Pinheiro",
+      "cargo": "Assistente de Qualidade - Lafirenze",
+      "estrelas": 5
+    },
+    {
+      "texto": "As etiquetas ShelfTag melhoramos nossos processos, com ganho em qualidade, agilidade, com menos desperdícios e padronizamos nossos estoques, Equipe atenciosa, que entende de operação de verdade.",
+      "nome": "João Tadeu",
+      "cargo": "Gerente  - Linguiçaria do chef",
+      "estrelas": 5
+    }
   ]
 }
