@@ -14,7 +14,7 @@ const SITE = {
   horario: "Seg a Sex, 8h às 18h",
   formularioExterno: "",                // opcional: link de Google Forms/Typeform. Vazio = usa o formulário do site
   redes: {
-    instagram: "#",
+    instagram: "https://www.instagram.com/2pgestao_tecnologia/",
     linkedin: "#",
   },
   // Clientes atendidos: coloque o arquivo do logo em assets/img/clientes/ e informe o nome em "logo".
@@ -205,7 +205,7 @@ function renderFooter() {
       </div>
       <div class="footer__bottom">
         <span>© ${year} ${SITE.razao} · CNPJ ${SITE.cnpj} · Todos os direitos reservados.</span>
-        <span>${SITE.dominio}</span>
+        <span><a href="privacidade.html">Política de Privacidade</a> · ${SITE.dominio}</span>
       </div>
     </div>`;
 
